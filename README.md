@@ -10,6 +10,6 @@ These are the materials for the workshop "Data analysis with Python: An introduc
 
 ## Authors
 
-Kevin Beswick <kdbeswic@ncsu.edu>
-Bret Davidson <bddavids@ncsu.edu>
-Nushrat Khan  <njkhan@ncsu.edu>
+* Kevin Beswick <kdbeswic@ncsu.edu>
+* Bret Davidson <bddavids@ncsu.edu>
+* Nushrat Khan  <njkhan@ncsu.edu>
