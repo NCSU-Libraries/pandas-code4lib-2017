@@ -1,182 +1,229 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/simple.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/simple.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>
-					<h2>Data analysis with Python: An introduction to Pandas and Jupyter Notebooks</h2>
-                      <p style="color:#990000"> Kevin Beswick</p>
-                      <p style="color:#990000"> Nushrat Khan </p>
-				</section>
+    <!-- Printing and PDF exports -->
+    <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h2>Data analysis with Python: An introduction to Pandas and Jupyter Notebooks</h2>
+                <p style="color:#990000"> Kevin Beswick</p>
+                <p style="color:#990000"> Nushrat Khan </p>
+            </section>
 
-				<section>
-				  <h2>Agenda</h2>
-          <table>
-            <tr>
-              <td>Lecture</td>
-              <td>30 mins</td>
-            </tr>
-            <tr>
-              <td>Technical Orientation</td>
-              <td>10 mins</td>
-            </tr>
-            <tr>
-              <td>Hands-on workshop part 1</td>
-              <td>45 mins</td>
-            </tr>
-            <tr>
-                <td> Break</td>
-                <td>10 mins</td>
-            </tr>
-            <tr>
-              <td>Lecture</td>
-              <td>15 mins</td>
-            </tr>
-            <tr>
-              <td>Hands on workshop part 2</td>
-              <td>60 mins</td>
-            </tr>
-            <tr> 
-                <td>Q/A</td>
-                <td>10 mins </td>
-            </tr>
-          </table>
-				</section>
+            <section>
+                <h2>Agenda</h2>
+                <table>
+                    <tr>
+                        <td>Lecture</td>
+                        <td>30 mins</td>
+                    </tr>
+                    <tr>
+                        <td>Technical Orientation</td>
+                        <td>10 mins</td>
+                    </tr>
+                    <tr>
+                        <td>Hands-on workshop part 1</td>
+                        <td>45 mins</td>
+                    </tr>
+                    <tr>
+                        <td> Break</td>
+                        <td>10 mins</td>
+                    </tr>
+                    <tr>
+                        <td>Lecture</td>
+                        <td>15 mins</td>
+                    </tr>
+                    <tr>
+                        <td>Hands on workshop part 2</td>
+                        <td>60 mins</td>
+                    </tr>
+                    <tr> 
+                        <td>Q/A</td>
+                        <td>10 mins </td>
+                    </tr>
+                </table>
+            </section>
 
-        <section>
-          <h2>Introductions</h2>
-          <p>Tell us your name, and where you're from</p>
-        </section>
+            <section>
+                <h2>Introductions</h2>
+                <p>Tell us your name, and where you're from</p>
+            </section>
 
-        <section>
-          <h2>Prerequisites</h2>
-          <ul>
-            <li>Basic Python familiarity</li>
-          </ul>
-        </section>
+            <section>
+                <h2>Prerequisites</h2>
+                <ul>
+                    <li>Basic Python familiarity</li>
+                </ul>
+            </section>
 
-        <section>
-          <h2>What is Pandas?</h2>
-          <ul>
-            <li>A Python package providing fast, flexible and expressive data structures</li>
-            <li>Designed to make working with relational or labeled data both easy and intuitive</li>
-            <li>Filling out the gap of data analysis and modelling that was not as easy to do using Python before</li>
-          </ul>
-        </section>
+            <section>
+                <h2>What is Pandas?</h2>
+                <ul>
+                    <li>A Python package providing fast, flexible and expressive data structures</li>
+                    <li>Designed to make working with relational or labeled data both easy and intuitive</li>
+                    <li>Filling out the gap of data analysis and modelling that was not as easy to do using Python before</li>
+                </ul>
+            </section>
 
-        <section>
-          <h2>Why should I want to use Pandas?</h2>
-          <ul>
-            <li>Enables you to carry out entire data analysis workflow in Python</li>
-            <li></li>
-            <li></li>
-          </ul>
-        </section>
+            <section>
+                <h2>Why should I want to use Pandas?</h2>
+                <ul>
+                    <li>Enables you to carry out entire data analysis workflow in Python</li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </section>
 
-        <section>
-          <h2>Capability</h2>
-          <ul>
-            <li>Data import/export</li>
-            <li>Data cleaning</li>
-            <li>Data analysis</li>
-            <li>Data visualization</li>
-          </ul>
-          <aside class="notes">
-            <ul>
-              <li>Fast and efficient DataFrame object for data manipulation with integrated indexing</li>
-              <li>Tools for reading/writing data between in-memory data structures and formats</li>
-              <li>Intelligent data alignment and integrated handling of missing data</li>
-              <li>Reshaping and pivoting of datasets</li>
-              <li>Intelligent slicing, fancy indexing, subsetting of large datasets</li>
-              <li>High performance merging and joining of datasets</li>
-              <li>Time series functionality</li>
-              <li></li>
-            </ul>
-          </aside>
-        </section>
+            <section>
+                <h2>Capability</h2>
+                <ul>
+                    <li>Data import/export</li>
+                    <li>Data cleaning</li>
+                    <li>Data analysis</li>
+                    <li>Data visualization</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>Fast and efficient DataFrame object for data manipulation with integrated indexing</li>
+                        <li>Tools for reading/writing data between in-memory data structures and formats</li>
+                        <li>Intelligent data alignment and integrated handling of missing data</li>
+                        <li>Reshaping and pivoting of datasets</li>
+                        <li>Intelligent slicing, fancy indexing, subsetting of large datasets</li>
+                        <li>High performance merging and joining of datasets</li>
+                        <li>Time series functionality</li>
+                        <li></li>
+                    </ul>
+                </aside>
+            </section>
+        
+            <section>
+                <h2>Other Popular Statistical Software </h2>
+                <ul>
+                    <li> Open source software: R </li>
+                    <li>Proprietary software: Mathematica, MATLAB, SASS, SPSS </li>
+                </ul>
+            </section>
+            
+            <section>
+                <h3>Comparison between Pandas and R</h3>
+                <ul>
+                    <li>Syntax is often similar, one can be occassionally simpler than other based on a specfic method</li>
+                    <li>Python has main packages for data analysis tasks, but R was developed 16 years before Pandas, so it has larger ecosystem of smaller packages</li>
+                    <li>Python can be more efficient in non-statistical areas, such as text analysis. So, learning to Pandas can serve multiple purpose.</li>
+                    <li> They are both useful and complement each other </li>
+                </ul>
+            </section>
 
-        <section>
-          <h2>Examples of Pandas (Series)</h2>
-        </section>
+            <section>
+                <h2>Series</h2>
+                <p>Series is a one-dimensional labeled array capable of holding any data type (integers, strings, floating point numbers, Python objects, etc.). The axis labels are collectively referred to as the index.</p>
+            </section>
+      
+            <section>
+                <h2> Example of Series </h2>
+                <h4> Data on different occupation </h4>
+                <p>
+                    <table>
+                        <tr>
+                            <td>0</td>
+                            <td>Librarian</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Software Developer</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Engineer</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>IT Support Specialist</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Research Data Coordinator</td>
+                        </tr>
+                    </table>
+                </section>
 
-        <section>
-          <h2>Examples of Pandas (DataFrame)</h2>
-          <p>Including intro to matrix-style data structures</p>
-        </section>
+                <section>
+                    <h2>Examples of Pandas (DataFrame)</h2>
+                    <p>Including intro to matrix-style data structures</p>
+                </section>
+        
+                <section>
+                    <h2> Next sessions</h2>
+                </section>
+        
+                <section>
+                    <h2>Overview of Technical Orientation</h2>
+                </section>
+        
+                <section>
+                    <h2>What is a Jupyter Notebook?</h2>
+                    <p>installation instructions</p>
+                    <p>brief history (ipython, etc)</p>
+                </section>
 
-        <section>
-          <h2>Examples of Pandas</h2>
-        </section>
+                <section>
+                    <h2>Why use a Jupyter Notebook?</h2>
+                </section>
 
-        <section>
-          <h2>Comparison of Pandas to R (or other similar options)</h2>
-        </section>
+                <section>
+                    <h3>About Cells in Jupyter Notebook</h3>
+                    <ul>
+                    <p>Each section of a Jupyter notebook is called a cell. A cell can typically contain either Python code or Markdown, although with Jupyter add-ons, more formats are possible.</p>
+                    <p>Cells make it easier to execute a spceific portion of your code or split between code and docuemntation easily. It helps keep your notebook more organized.</p>
+                    <p>Cell types: Code, Markdown, Raw NBConvert, Heading. </p>
+                </ul>
+                </section>
 
-        <section>
-          <h2>What is a Jupyter Notebook?</h2>
-          <p>installation instructions</p>
-          <p>brief history (ipython, etc)</p>
-        </section>
 
-        <section>
-          <h2>Why use a Jupyter Notebook?</h2>
-        </section>
+                <section>
+                    <h2>Overview of first hands-on section</h2>
+                    <p>mention matplotlib and numpy and any other libraries we'll use</p>
+                </section>
+            </div>
+        </div>
 
-        <section>
-          <h2>About cells</h2>
-          <p>What are they? Why should we use them?</p>
-          <p>Markdown, code, etc (cell types)</p>
-        </section>
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
 
-        <section>
-          <h2>Overview of tech orientation</h2>
-        </section>
+        <script>
+        // More info https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            history: true,
 
-        <section>
-          <h2>Overview of first hands-on section</h2>
-          <p>mention matplotlib and numpy and any other libraries we'll use</p>
-        </section>
-			</div>
-		</div>
-
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
-
-		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true,
-
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-            Reveal.configure({ slideNumber: true });
-		</script>
-	</body>
-</html>
+            // More info https://github.com/hakimel/reveal.js#dependencies
+            dependencies: [
+                { src: 'plugin/markdown/marked.js' },
+                { src: 'plugin/markdown/markdown.js' },
+                { src: 'plugin/notes/notes.js', async: true },
+                { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+            ]
+        });
+        Reveal.configure({ slideNumber: true });
+        </script>
+    </body>
+    </html>
