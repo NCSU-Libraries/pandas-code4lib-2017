@@ -314,7 +314,7 @@ body {
   -ms-touch-action: none;
       touch-action: none; }
 
-.reveal .slides {
+.reveal .slides {     
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1363,3 +1363,7 @@ body {
 
 .zoomed .reveal .roll span:after {
   visibility: hidden; }
+  
+  .slides > section h2{
+      color:#990000;
+  }

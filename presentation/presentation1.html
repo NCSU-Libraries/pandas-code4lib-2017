@@ -26,22 +26,22 @@
         <div class="slides">
             <section>
                 <h2>Data analysis with Python: An introduction to Pandas and Jupyter Notebooks</h2>
-                <p style="color:#990000"> Kevin Beswick</p>
-                <p style="color:#990000"> Nushrat Khan </p>
+                <h3> Kevin Beswick</h3>
+                <h3> Nushrat Khan </h3>
             </section>
 
             <section>
                 <h2>Agenda</h2>
                 <table>
-                    <tr>
+                    <tr style="font-weight:bold; color:#345cba">
                         <td>Lecture</td>
                         <td>30 mins</td>
                     </tr>
-                    <tr>
+                    <tr style="font-weight:bold; color:#345cba">
                         <td>Technical Orientation</td>
                         <td>10 mins</td>
                     </tr>
-                    <tr>
+                    <tr style="font-weight:bold; color:#345cba">
                         <td>Hands-on workshop part 1</td>
                         <td>45 mins</td>
                     </tr>
@@ -89,8 +89,9 @@
                 <h2>Why should I want to use Pandas?</h2>
                 <ul>
                     <li>Enables you to carry out entire data analysis workflow in Python</li>
-                    <li></li>
-                    <li></li>
+                    <li>Many available libraries to perform data analysis and visualization easily</li>
+                    <li>Not having to learn another separate language, such as R.</li>
+                    <li> Python in general is a great option to perform textual analysis.</li>
                 </ul>
             </section>
 
@@ -125,13 +126,18 @@
             </section>
             
             <section>
-                <h3>Comparison between Pandas and R</h3>
+                <h2>Comparison between Pandas and R</h2>
                 <ul>
                     <li>Syntax is often similar, one can be occassionally simpler than other based on a specfic method</li>
                     <li>Python has main packages for data analysis tasks, but R was developed 16 years before Pandas, so it has larger ecosystem of smaller packages</li>
                     <li>Python can be more efficient in non-statistical areas, such as text analysis. So, learning to Pandas can serve multiple purpose.</li>
-                    <li> They are both useful and complement each other </li>
+                    <li> Both are useful and complement each other. </li>
                 </ul>
+            </section>
+            
+            <section>
+                <h2> Data Structures in Pandas </h2>
+                <h3 style="font-weight:bold; color:#345cba"> Series and DataFrames </h3>
             </section>
 
             <section>
@@ -142,88 +148,158 @@
             <section>
                 <h2> Example of Series </h2>
                 <h4> Data on different occupation </h4>
-                <p>
-                    <table>
-                        <tr>
-                            <td>0</td>
-                            <td>Librarian</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>Software Developer</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Engineer</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>IT Support Specialist</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Research Data Coordinator</td>
-                        </tr>
-                    </table>
-                </section>
+                <table>
+                    <tr>
+                        <td>0</td>
+                        <td>Librarian</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Software Developer</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Engineer</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>IT Support Specialist</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Research Data Coordinator</td>
+                    </tr>
+                </table>
+            </section>
+                
+            <section>
+                <h2>DataFrame</h2>
+                <p>A DataFrame is a tablular data structure comprised of rows and columns, akin to a spreadsheet, database table, or R's data.frame object. It can be thought as a group of Series objects that share an index (column names). </p>
+            </section>
 
-                <section>
-                    <h2>Examples of Pandas (DataFrame)</h2>
-                    <p>Including intro to matrix-style data structures</p>
-                </section>
+            <section>
+                <h2>Example of DataFrame</h2>
+                <h4> Data about different departments within a library </h4>
+                <!-- <p>Including intro to matrix-style data structures</p> -->
+                <table style="font-size:30px">
+                    <tr>
+                        <td></td>
+                        <td> Department Name </td>
+                        <td> Number of Employees </td>
+                        <td> Number of Machines</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>Digital Libraries Initiatives (DLI)</td>
+                        <td> 12 </td>
+                        <td> 14 </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>IT</td>
+                        <td> 20 </td>
+                        <td> 25 </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td> Special Collections </td>
+                        <td> 13 </td>
+                        <td> 10 </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Building Services</td>
+                        <td> 2 </td>
+                        <td> 1 </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Research Data Management</td>
+                        <td> 2 </td>
+                        <td> 3 </td>
+                    </tr>
+                </table>
+            </section>
+                
+            <section>
+                <h2> About Jupyter Notebook </h2>
+            </section>
         
-                <section>
-                    <h2> Next sessions</h2>
-                </section>
-        
-                <section>
-                    <h2>Overview of Technical Orientation</h2>
-                </section>
-        
-                <section>
-                    <h2>What is a Jupyter Notebook?</h2>
-                    <p>installation instructions</p>
-                    <p>brief history (ipython, etc)</p>
-                </section>
+            <section>
+                <h2>What is a Jupyter Notebook?</h2>
+                <p> Jupyter is an interactive notebook (documents) that can contain both computer code (e.g. python) and rich text elements (paragraph, equations, figures, links, etc.). Notebooks are produced and run by Jupyter Notebook app. It makes code sharing and execution easier to perform data analysis by scientists. </p>
+            </section>
+                    
+            <section>
+                <h2>Brief History</h2>
+                <p>The IPython was developed in 2011 by a team of researchers led by Fernando Pérez from UC Berkeley and Brian Granger from California Polytechnic State University. The idea was to incorportae detailed and understandable descriptions of raw code, be able to keep track of different versions of code that produce various feagures.</p>
+                <p> The project was later renamed as Jupyter Notebook to make it compatible with other programming languages, such as Julia and R. </p>
+            </section>
 
-                <section>
-                    <h2>Why use a Jupyter Notebook?</h2>
-                </section>
-
-                <section>
-                    <h3>About Cells in Jupyter Notebook</h3>
-                    <ul>
-                    <p>Each section of a Jupyter notebook is called a cell. A cell can typically contain either Python code or Markdown, although with Jupyter add-ons, more formats are possible.</p>
-                    <p>Cells make it easier to execute a spceific portion of your code or split between code and docuemntation easily. It helps keep your notebook more organized.</p>
-                    <p>Cell types: Code, Markdown, Raw NBConvert, Heading. </p>
+            <section>
+                <h2>Why use a Jupyter Notebook?</h2>
+                <ul>
+                    <li>Free and open source - widely used</li>
+                    <li>Ease of sharing </li>
+                    <li>Literate programming docuemnt - ability to incorporate rich texts with code</li>
+                    <li>Reproducibility</li>
                 </ul>
-                </section>
+                <aside class="notes">
+                    <p>Nature published an <a href = "http://www.nature.com/news/interactive-notebooks-sharing-the-code-1.16261">article</a> on the benefits of using Jupyter Notebook.</p>
+                    <aside>
+                    </section>
+                
+                    <section>
+                        <h2>Installation instructions</h2>
+                        <p>Jupyter Notebook can be installed easily on your local machine using Anaconda and conda. Experienced Python users can use pip alternatively.</p>
+                        <p>Detailed instruction can be found on <a href="http://jupyter.readthedocs.io/en/latest/install.html#installing-jupyter-using-anaconda-and-conda">Jupyter Documentation</a></p>
+                    </section>
 
+                    <section>
+                        <h2>Cells in a Jupyter Notebook</h2>
+                        <ul>
+                            <p>Each section of a Jupyter notebook is called a cell. A cell can typically contain either Python code or Markdown, although with Jupyter add-ons, more formats are possible.</p>
+                            <p>Cells make it easier to execute a spceific portion of your code or split between code and docuemntation easily. It helps keep your notebook more organized.</p>
+                            <p>Cell types: Code, Markdown, Raw NBConvert, Heading. </p>
+                        </ul>
+                    </section>
+                
+                    <section>
+                        <h2>Overview of first hands-on section</h2>
+                        <p>In the first section we will talk about different data types, how to import data, and some basic functions to explore your data.</p>
+                        <p>Python comes with many libraries or packages that are set of codes to perform specific tasks. Below are some of the libraries we will use for this workshop.</p>
+                        <ul>
+                            <li>numpy - Python package for scientific computing.</li>
+                            <li>matplotlib - 2D plotting library for visualization.</li>
+                        </ul>
+                    </section>
 
-                <section>
-                    <h2>Overview of first hands-on section</h2>
-                    <p>mention matplotlib and numpy and any other libraries we'll use</p>
-                </section>
+                    <section>
+                        <h2> Next session: </h2>
+                        <h3>Overview of Technical Orientation</h3>
+                    </section>
+           
+                </div>
             </div>
-        </div>
 
-        <script src="lib/js/head.min.js"></script>
-        <script src="js/reveal.js"></script>
+            <script src="lib/js/head.min.js"></script>
+            <script src="js/reveal.js"></script>
 
-        <script>
-        // More info https://github.com/hakimel/reveal.js#configuration
-        Reveal.initialize({
-            history: true,
+            <script>
+            // More info https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                history: true,
 
-            // More info https://github.com/hakimel/reveal.js#dependencies
-            dependencies: [
-                { src: 'plugin/markdown/marked.js' },
-                { src: 'plugin/markdown/markdown.js' },
-                { src: 'plugin/notes/notes.js', async: true },
-                { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-            ]
-        });
-        Reveal.configure({ slideNumber: true });
-        </script>
-    </body>
-    </html>
+                // More info https://github.com/hakimel/reveal.js#dependencies
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+                ]
+            });
+            Reveal.configure({ slideNumber: true });
+            </script>
+        </body>
+        </html>
