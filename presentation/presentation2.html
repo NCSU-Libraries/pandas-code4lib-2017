@@ -26,9 +26,9 @@
         <div class="slides">
             <section>
                 <h2>Data analysis with Python: An introduction to Pandas and Jupyter Notebooks</h2>
-                <h4> Data Manipulation and Visualization </h4>
-                <p style="color:#990000"> Kevin Beswick</p>
-                <p style="color:#990000"> Nushrat Khan </p>
+                <h3 style = "color:#23519b"> Data Manipulation and Visualization </h3>
+                <p> Kevin Beswick</p>
+                <p> Nushrat Khan </p>
             </section>
 
             <section>
@@ -66,35 +66,55 @@
             </section>
                 
             <section>
-                <h3>Things we will cover in this section: </h3>
+                <h2>Topics of this section: </h2>
                 <ul>
+                    <li> Merging data </li>
                     <li> Cleaning data </li>
                     <li> Sorting data </li>
-                    <li> Understanding basic statistics</li>
-                    <ul>
+                    <li> Transforming data </li>
+                    <li> Statistics</li>
+                    <!-- <ul>
                         <li> Five number summary </li>
                         <li> Seven number summary </li>
                         <li> Identifying distributions </li>
-                    </ul>
+                    </ul> -->
                     <li> Visualization </li>
                 </ul>
                 
             </section>
+            
+            <section>
+                <h2>Merging data</h2>
+                <p>There can be different cases where we would like to combine separate datasets. Two functions are useful when it comes to joining different datasets. </p>
+                <ul>
+                    <li> Concatenate: For large datasets, data can be split into multiple files. We can use the <span style="font-style:italic">concat</span> function to join dataframes with the same data structure.</li>
+                    <li> Database-style Merge: High performance in memory join operations can be done using the <span style="font-style:italic">merge</span> function.  </li>
+                </ul> 
+            </section>
         
             <section>
                 <h2>Data Cleaning </h2>
+                <p>Data cleaning is an important step before we can manipulate our data. We will show some examples of how to get rid of duplicate values, remove null values, special characters etc.</p>
             </section>
 
             <section>
                 <h2> Sorting Data </h2>
+                <p>Sorting makes it easier to read or locate any specific data. We can also group by particular variables to apply other functions to them. </p>
+            </section>
+            
+            <section>
+                <h2> Transforming Data </h2>
+                <p>Pandas has functions to transform data formats, such as changing date format, converting a data to a different unit. We can also write define functions to perform a specific transformation over a row or column.</p>
             </section>
         
             <section>
-                <h2> Basic Statistics </h2>
+                <h2> Statistics </h2>
+                <p>We will demonstrate some examples of performing statistics on our data, such as selecting data for a specific date range.</p>
             </section>
         
             <section>
                 <h2> Visualization </h2>
+                <p> After manipulating data, visualization is the final step that helps us comminucate that with our audience. We will show examples of basic plot functions that are listed below: </p>
                 <ul>
                     <li> Bar plot </li>
                     <li> Box plot </li>
