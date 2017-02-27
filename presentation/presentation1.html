@@ -26,8 +26,9 @@
         <div class="slides">
             <section>
                 <h2>Data analysis with Python: An introduction to Pandas and Jupyter Notebooks</h2>
-                <h3> Kevin Beswick</h3>
-                <h3> Nushrat Khan </h3>
+                <h4> Kevin Beswick</h4>
+                <h4> Nushrat Khan </h4>
+                <h4>Bret Davidson</h4>
             </section>
 
             <section>
@@ -70,6 +71,14 @@
             </section>
 
             <section>
+                <h2>Lab Setup</h2>
+                <ol>
+                    <li>Visit <a href="https://github.com/NCSU-Libraries/pandas-code4lib-2017">github.com/NCSU-Libraries/pandas-code4lib-2017</a></li>
+                    <li>Click on the "launch binder" badge at the top of the README.</li>
+                </ol>
+            </section>
+
+            <section>
                 <h2>Prerequisites</h2>
                 <ul>
                     <li>Basic Python familiarity</li>
@@ -81,17 +90,16 @@
                 <ul>
                     <li>A Python package providing fast, flexible and expressive data structures</li>
                     <li>Designed to make working with relational or labeled data both easy and intuitive</li>
-                    <li>Filling out the gap of data analysis and modelling that was not as easy to do using Python before</li>
+                    <li>Filling out the gap of data analysis and modeling that was not as easy to do using Python before</li>
                 </ul>
             </section>
 
             <section>
                 <h2>Why should I want to use Pandas?</h2>
                 <ul>
-                    <li>Enables you to carry out entire data analysis workflow in Python</li>
-                    <li>Many available libraries to perform data analysis and visualization easily</li>
-                    <li>Not having to learn another separate language, such as R</li>
-                    <li> Python in general is a great option to perform textual analysis</li>
+                    <li>Enables you to carry out an entire data analysis workflow in Python</li>
+                    <li>Integrates with other Python libraries</li>
+                    <li>No need to learn another language, such as R</li>
                 </ul>
             </section>
 
@@ -128,11 +136,18 @@
             <section>
                 <h2>Comparison between Pandas and R</h2>
                 <ul>
-                    <li>Syntax is often similar, one can be occassionally simpler than other based on a specfic method</li>
-                    <li>Python has main packages for data analysis tasks, but R was developed 16 years before Pandas, so it has larger ecosystem of smaller packages</li>
-                    <li>Python can be more efficient in non-statistical areas, such as text analysis. So, learning Pandas can serve multiple purposes.</li>
-                    <li> Both are useful and complement each other. </li>
+                    <li>Syntax is often similar</li>
+                    <li>Python has packages for data analysis, but R has larger ecosystem</li>
+                    <li>Python can be more efficient in non-statistical areas, such as text analysis</li>
+                    <li>Both are useful and complement each other</li>
                 </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>one can be occassionally simpler than other based on a specfic method</li>
+                        <li>R was developed 16 years before Pandas</li>
+                        <li>So, learning Pandas can serve multiple purposes.</li>
+                    </ul>
+                </aside>
             </section>
 
             <section>
@@ -190,7 +205,7 @@
                     </tr>
                     <tr>
                         <td>0</td>
-                        <td>Digital Libraries Initiatives (DLI)</td>
+                        <td>Digital Library Initiatives (DLI)</td>
                         <td> 12 </td>
                         <td> 14 </td>
 
@@ -228,13 +243,20 @@
 
             <section>
                 <h2>What is a Jupyter Notebook?</h2>
-                <p> Jupyter is an interactive notebook (documents) that can contain both computer code (e.g. python) and rich text elements (paragraph, equations, figures, links, etc.). Notebooks are produced and run by the Jupyter Notebook app. It makes code sharing and execution easier to perform data analysis by scientists. </p>
+                <ul>
+                    <li>Jupyter Notebooks are interactive documents that can contain both code and rich text elements. </li>
+                    <li>Renders Python and Markdown by default. </li>
+                    <li>This literate programming approach makes it easier to share code, and is popular in scientific computing and data science. </li>
+                </ul>
             </section>
 
             <section>
                 <h2>Brief History</h2>
-                <p>The IPython was developed in 2011 by a team of researchers led by Fernando Pérez from UC Berkeley and Brian Granger from California Polytechnic State University. The idea was to incorporate detailed and understandable descriptions of raw code, be able to keep track of different versions of code that produce various figures.</p>
-                <p> The project was later renamed as Jupyter Notebook to make it compatible with other programming languages, such as Julia and R. </p>
+                <ul>
+                    <li>Originally called IPython notebooks</li>
+                    <li>Developed in 2011 by a team of researchers led by Fernando Pérez from UC Berkeley and Brian Granger from California Polytechnic State University. </li>
+                    <li>Later renamed to Jupyter Notebook to make it compatible with other programming languages, such as Julia and R.</li>
+                </ul>
             </section>
 
             <section>
@@ -242,7 +264,7 @@
                 <ul>
                     <li>Free and open source - widely used</li>
                     <li>Ease of sharing </li>
-                    <li>Literate programming document - ability to incorporate rich texts with code</li>
+                    <li>Literate programming document - ability to incorporate rich text with code</li>
                     <li>Reproducibility</li>
                 </ul>
                 <aside class="notes">
@@ -252,33 +274,42 @@
 
                     <section>
                         <h2>Installation instructions</h2>
-                        <p>Jupyter Notebook can be installed easily on your local machine using Anaconda. Experienced Python users can use pip alternatively.</p>
-                        <p>Detailed instruction can be found in the <a href="http://jupyter.readthedocs.io/en/latest/install.html#installing-jupyter-using-anaconda-and-conda">Jupyter Documentation</a></p>
+                        <ul>
+                            <li>Jupyter can be installed easily on your local machine using Anaconda.</li>
+                            <li>Experienced Python users can use pip (pip install jupyter)</li>
+                            <li>Detailed instructions can be found in the <a href="http://jupyter.readthedocs.io/en/latest/install.html#installing-jupyter-using-anaconda-and-conda">Jupyter Documentation</a></li>
+                        </ul>
                     </section>
 
                     <section>
                         <h2>Cells in a Jupyter Notebook</h2>
                         <ul>
-                            <p>Each section of a Jupyter notebook is called a cell. A cell can typically contain either Python code or Markdown, although with Jupyter add-ons, more formats are possible.</p>
-                            <p>Cells make it easier to execute a specific portion of your code or split between code and documentation easily. It helps keep your notebook more organized.</p>
-                            <p>Cell types: Code, Markdown, Raw NBConvert, Heading. </p>
+                            <li>Each section of a Jupyter notebook is called a cell. </li>
+                            <li>A cell can typically contain either Python code or Markdown.</li>
+                            <li>Cells make it easier to execute a specific portion of your code or split between code and documentation easily.</li>
                         </ul>
                     </section>
 
                     <section>
                         <h2>Overview of first hands-on section</h2>
                         <p>In the first section we will talk about different data types, how to import data, and some basic functions to explore your data.</p>
-
-                        <p>Python comes with many libraries or packages that are set of codes to perform specific tasks. For example, in this workshop we will use matplotlib and ggplot for visualization.</p>
+                        <p>Pandas integrates with many Python libraries for related tasks. For example, in this workshop we will use matplotlib and ggplot for visualization.</p>
                     </section>
 
                     <section>
                         <h2>Lab Setup</h2>
                         <ol>
-                            <li>Visit <a href="http://mybinder.org/">http://mybinder.org/</a></li>
-                            <li>Enter the repository URL: <a href="https://github.com/bretdavidson/pandas-test">https://github.com/bretdavidson/pandas-test</a></li>
-                            <li>Click Submit!</li>
-                            <li>On successful build, click launch!</li>
+                            <li>Visit <a href="https://github.com/NCSU-Libraries/pandas-code4lib-2017">github.com/NCSU-Libraries/pandas-code4lib-2017</a></li>
+                            <li>Click on the "launch binder" badge at the top of the README.</li>
+                        </ol>
+                    </section>
+
+                    <section>
+                        <h2>Alternative Lab Setup</h2>
+                        <ol>
+                            <li>Visit <a href="https://www.continuum.io/downloads">www.continuum.io/downloads</a> and download the appropriate Anaconda package for your OS.</li>
+                            <li>Visit <a href="https://github.com/NCSU-Libraries/pandas-code4lib-2017">github.com/NCSU-Libraries/pandas-code4lib-2017</a> and clone or download the repo.</li>
+                            <li>Using your favorite shell, run `jupyter notebook` from within the repo directory. </li>
                         </ol>
                     </section>
 
