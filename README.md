@@ -1,4 +1,4 @@
-[![Binder](http://mybinder.org/badge.svg)](http://mybinder.org:/repo/bretdavidson/pandas-test)
+[![Binder](http://mybinder.org/badge.svg)](http://mybinder.org:/repo/NCSU-Libraries/pandas-code4lib-2017)
 
 # Data analysis with Python: An introduction to Pandas and Jupyter Notebooks @ Code4Lib 2017
 
