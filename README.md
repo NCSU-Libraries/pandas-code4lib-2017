@@ -1,3 +1,5 @@
+[![Binder](http://mybinder.org/badge.svg)](http://mybinder.org:/repo/bretdavidson/pandas-test)
+
 # Data analysis with Python: An introduction to Pandas and Jupyter Notebooks @ Code4Lib 2017
 
 ## Intro
