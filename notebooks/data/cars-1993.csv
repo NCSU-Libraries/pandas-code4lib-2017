@@ -1,4 +1,4 @@
-"","Manufacturer","Model","Type","Min.Price","Price","Max.Price","MPG.city","MPG.highway","AirBags","DriveTrain","Cylinders","EngineSize","Horsepower","RPM","Rev.per.mile","Man.trans.avail","Fuel.tank.capacity","Passengers","Length","Wheelbase","Width","Turn.circle","Rear.seat.room","Luggage.room","Weight","Origin","Make"
+"id","manufacturer","model","type","min_price","price","max_price","mpg_city","mpg_highway","air_bags","drive_train","cylinders","engine_size","horsepower","rpm","rev_per_mile","man_trans_avail","fuel_tank_capacity","passengers","length","wheelbase","width","turn_circle","rear_seat_room","luggage_room","weight","origin","make"
 "1","Acura","Integra","Small",12.9,15.9,18.8,25,31,"None","Front","4",1.8,140,6300,2890,"Yes",13.2,5,177,102,68,37,26.5,11,2705,"non-USA","Acura Integra"
 "2","Acura","Legend","Midsize",29.2,33.9,38.7,18,25,"Driver & Passenger","Front","6",3.2,200,5500,2335,"Yes",18,5,195,115,71,38,30,15,3560,"non-USA","Acura Legend"
 "3","Audi","90","Compact",25.9,29.1,32.3,20,26,"Driver only","Front","6",2.8,172,5500,2280,"Yes",16.9,5,180,102,67,37,28,14,3375,"non-USA","Audi 90"

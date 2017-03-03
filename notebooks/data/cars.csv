@@ -1,4 +1,4 @@
-Make,Manufacturer,Model,Type,Min.Price,Price,Max.Price,MPG.city,MPG.highway,AirBags,DriveTrain,Man.trans.avail,Fuel.tank.capacity,Passengers,Length,Wheelbase,Width,Turn.circle,Rear.seat.room,Luggage.room,Weight,Origin
+make,manufacturer,model,type,min_price,price,max_price,mpg_city,mpg_highway,air_bags,drive_train,man_trans_avail,fuel_tank_capacity,passengers,length,wheelbase,width,turn_circle,rear_seat_room,luggage_room,weight,origin
 Acura Integra,Acura,Integra,Small,12.9,15.9,18.8,25,31,None,Front,Yes,13.2,5,177,102,68,37,26.5,11,2705,non-USA
 Acura Legend,Acura,Legend,Midsize,29.2,33.9,38.7,18,25,Driver & Passenger,Front,Yes,18,5,195,115,71,38,30,15,3560,non-USA
 Audi 90,Audi,90,Compact,25.9,29.1,32.3,20,26,Driver only,Front,Yes,16.9,5,180,102,67,37,28,14,3375,non-USA
