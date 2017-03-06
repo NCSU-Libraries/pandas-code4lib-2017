@@ -65,7 +65,7 @@
                     </tr>
                 </table>
             </section>
-                
+
             <section>
                 <h2>Topics of this section: </h2>
                 <ul>
@@ -81,18 +81,63 @@
                     </ul> -->
                     <li> Visualization </li>
                 </ul>
-                
+
             </section>
-            
+
             <section>
-                <h2>Merging data</h2>
-                <p>There can be different cases where we would like to combine separate datasets. Two functions are useful when it comes to joining different datasets. </p>
+                <h2>Combining data</h2>
+                <p>There are 2 different ways of combining DataFrames in Pandas:</p>
                 <ul>
-                    <li> Concatenate: For large datasets, data can be split into multiple files. We can use the <span style="font-style:italic">concat</span> function to join dataframes with the same data structure.</li>
-                    <li> Database-style Merge: High performance in memory join operations can be done using the <span style="font-style:italic">merge</span> function.  </li>
-                </ul> 
+                    <li> <b>Concatenate</b>: For large datasets, data can be split into multiple files. We can use the <span style="font-style:italic">concat()</span> function to concatenate DataFrames with the same structure.</li>
+                    <li> <b>Database-style Merge</b>: High performance in-memory join operations can be done using the <span style="font-style:italic">merge()</span> function.  </li>
+                </ul>
             </section>
-        
+
+            <section>
+              <h2>A refresher in database theory</h2>
+              <ul>
+                <li>Merges in Pandas are like joins in relational databases</li>
+                <li>Join 2 DataFrames on a unique key found in both datasets (foreign key in DB)</li>
+                <li>First table in a merge is referred to as "left" table, and second is referred to as "right" table</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Inner Join</h2>
+              <p>Join 2 tables by taking only rows where "foreign key" exists in both tables</p>
+              <img src="images/inner_join_venn.png" />
+            </section>
+
+            <section>
+              <h3>Left Table</h3>
+              <img src="images/left_table.png" />
+              <h3>Right Table</h3>
+              <img src="images/right_table.png" />
+            </section>
+
+            <section>
+              <h2>Inner Join Example</h2>
+              <img src="images/inner_join.png" />
+            </section>
+
+            <section>
+              <h2>Left Join</h2>
+              <p>Join 2 tables by taking all rows from left table, and leaving all row values in right table where "foreign key" doesn't exist as null</p>
+              <img src="images/left_join_venn.png" />
+            </section>
+
+            <section>
+              <h3>Left Table</h3>
+              <img src="images/left_table.png" />
+              <h3>Right Table</h3>
+              <img src="images/right_table.png" />
+            </section>
+
+            <section>
+              <h2>Left Join Example</h2>
+              <img src="images/left_join.png" />
+            </section>
+
             <section>
                 <h2>Data Cleaning </h2>
                 <p>Data cleaning is an important step before we can manipulate our data. We will show some examples of how to get rid of duplicate values, remove null values, special characters etc.</p>
@@ -102,28 +147,48 @@
                 <h2> Sorting Data </h2>
                 <p>Sorting makes it easier to read or locate any specific data. We can also group by particular variables to apply other functions to them. </p>
             </section>
-            
+
             <section>
                 <h2> Transforming Data </h2>
-                <p>Pandas has functions to transform data formats, such as changing date format, converting data to a different unit. We can also define functions to perform a specific transformation over a row or column.</p>
+                <p>Pandas has functions to transform data formats, such as changing date format, converting data to a different unit. We can also define functions to perform a specific transformations over a row or column.</p>
             </section>
-        
+
             <!-- <section>
                 <h2> Statistics </h2>
                 <p>We will demonstrate some examples of performing statistics on our data, such as selecting data for a specific date range.</p>
             </section> -->
-        
+
             <section>
                 <h2> Visualization </h2>
-                <p> After manipulating data, visualization is the final step that helps us communicate that with our audience. We will show examples of basic plot functions that are listed below: </p>
+                <p> After manipulating data, visualization is the final step that helps us communicate the meaning of the data with our audience. We will show examples of the following basic plot functions: </p>
                 <ul>
                     <li> Bar plot </li>
                     <li> Box plot </li>
                     <li> Scatter plot </li>
-                    <li> Histogram </li>      
+                    <li> Histogram </li>
                 </ul>
             </section>
-            
+
+            <section>
+                <h2> Bar plot </h2>
+                <img src="images/barplot_example.png" height="425" width="700" />
+            </section>
+
+            <section>
+                <h2> Box plot </h2>
+                <img src="images/box_plot.png"  />
+            </section>
+
+            <section>
+                <h2> Scatter plot </h2>
+                <img src="images/scatter_plot_example.jpg" width="500" height="500" />
+            </section>
+
+            <section>
+                <h2> Histogram </h2>
+                <img src="images/histogram.jpeg" height="500" width="500" />
+            </section>
+
             <section>
                 <h2> Next session: </h2>
                 <h3>Hands-on Exercise - Part 2</h3>
