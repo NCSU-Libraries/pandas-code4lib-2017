@@ -8,7 +8,7 @@ These are the materials for the workshop "Data analysis with Python: An introduc
 
 ## Getting Started
 
-This workshop can be run entirely in a web browser with no prerequisites installed, using a freely available service called "Binder". It can be started by clicking on the badge at the top of this README that says "launch binder". This will spin up a running instance of the Jupyter notebooks in this repository. However, the binder service is not always reliable, so you may need to run a local version of the Jupyter notebook server. We recommend using Anaconda.
+This workshop can be run entirely in a web browser with no prerequisites installed, using a freely available service called "Binder". It can be started by clicking on the badge at the top of this README that says "launch binder". This will spin up a running instance of the Jupyter notebooks in this repository. However, the binder service is not always reliable, so you may need to run a local version of the Jupyter notebook server. We recommend using Anaconda if you do not have Python 3 installed on your computer.
 
 ### Anaconda Setup
 
@@ -25,6 +25,10 @@ Open a shell of your choice (or the command prompt in Windows if you don't have 
     jupyter notebook
 
 At this point, a web browser should open with a listing of the files in the repository. You're ready to go!
+
+### For participants who already use Python 3
+
+If you already have Python3 and pip installed on your machine, you don't need to install Anaconda. You can just clone the workshop GitHub repository and run the same commands as above.
 
 ## Authors
 
